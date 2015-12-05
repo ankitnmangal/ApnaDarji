@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+   "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+   "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+	<constant name="struts.devMode" value="true" />
+
+	<package name="default" extends="struts-default">
+		<action name="LoginAction" class="com.ApnaDarji.Authentication.LoginAction"
+			method="execute">
+		</action>
+
+		<action name="SignUpAction" class="com.ApnaDarji.Authentication.SignUpAction"
+			method="execute">
+		</action>
+		
+		<action name="CodeConfirmationAction"
+			class="com.ApnaDarji.Authentication.CodeConfirmationAction" method="execute">
+		</action>
+		<action name="LogoutAction" class="com.ApnaDarji.Authentication.LogoutAction"
+			method="execute">
+		</action>
+
+		<action name="ForgotPasswordAction" class="com.ApnaDarji.Authentication.ForgotPasswordAction"
+			method="execute">
+		</action>
+
+		<action name="FabricDisplayAction" class="com.ApnaDarji.Products.FabricDisplayAction"
+			method="GetAllProducts">
+			<result name="SUCCESS">Fabrics.jsp</result>
+		</action>
+		
+		<action name="FabricFilterAction" class="com.ApnaDarji.Products.FabricDisplayAction"
+			method="GetFilteredData">
+		</action>
+
+		<action name="FavoriteProductDisplayAction" method="execute"
+			class="com.ApnaDarji.Products.FavoriteProductDisplayAction">
+			<result name="SUCCESS">FavProducts.jsp</result>
+		</action>
+
+		<action name="FavoriteProductAddAction" method="AddFav"
+			class="com.ApnaDarji.Products.FavoriteProductAction">
+		</action>
+
+		<action name="FavoriteProductRemoveAction" method="RemoveFav"
+			class="com.ApnaDarji.Products.FavoriteProductAction">
+		</action>
+
+		<action name="FavoriteProductMoveToCartAction" method="MoveToCart"
+			class="com.ApnaDarji.Products.FavoriteProductAction">
+		</action>
+
+		<action name="CartDisplayAction" method="execute"
+			class="com.ApnaDarji.Products.CartDisplayAction">
+			<result name="SUCCESS">MyCart.jsp</result>
+		</action>
+
+		<action name="CartProductAddAction" method="AddToCart"
+			class="com.ApnaDarji.Products.CartProductAction">
+		</action>
+
+		<action name="CartProductRemoveAction" method="RemoveCartItem"
+			class="com.ApnaDarji.Products.CartProductAction">
+		</action>
+
+		<action name="CartProductMoveToFavAction" method="MoveToFav"
+			class="com.ApnaDarji.Products.CartProductAction">
+		</action>
+		
+		<action name="CustomizationAction" method="execute" class="com.ApnaDarji.Products.CustomizationAction">
+			<result name="SUCCESS">Customize.jsp</result>
+		</action>
+		
+	</package>
+	<package name="securePackage" extends="struts-default">
+		<interceptors>
+			<interceptor name="LoginCheckInterceptor"
+				class="com.ApnaDarji.Util.LoginCheckInterceptor" />
+			<interceptor-stack name="secureStack">
+				<interceptor-ref name="LoginCheckInterceptor" />
+				<interceptor-ref name="defaultStack" />
+
+			</interceptor-stack>
+		</interceptors>
+		<default-interceptor-ref name="secureStack" />
+		<global-results>
+			<result name="login">LoginCheck.jsp</result>
+		</global-results>
+		<action name="virtualMyAccountJSP_Action">
+			<result>MyAccount.jsp</result>
+		</action>
+		<action name="virtualMyOrdersJSP_Action">
+			<result>MyOrders.jsp</result>
+		</action>
+		<action name="UpdateAddressAction" method="UpdateAddress"
+			class="com.ApnaDarji.UserDetails.UpdateAddressAction">
+			<result name="success" type="redirectAction">UserAccountDisplayAction</result>
+			<result name="error">LoginCheck.jsp</result>
+		</action>
+		<action name="DeleteAddressAction" method="DeleteAddress"
+			class="com.ApnaDarji.UserDetails.UpdateAddressAction">
+			<result name="success" type="redirectAction">UserAccountDisplayAction</result>
+			<result name="error">LoginCheck.jsp</result>
+		</action>
+		<action name="AddAddressAction" method="AddAddress"
+			class="com.ApnaDarji.UserDetails.UpdateAddressAction">
+			<result name="success" type="redirectAction">UserAccountDisplayAction</result>
+			<result name="error">LoginCheck.jsp</result>
+		</action>
+
+		<action name="UpdateShirtMeasurementAction" method="UpdateShirtMeasurement"
+			class="com.ApnaDarji.UserDetails.UpdateShirtMeasurementAction">
+			<result name="success" type="redirectAction">UserAccountDisplayAction</result>
+		</action>
+		<action name="DeleteShirtMeasurementAction" method="DeleteShirtMeasurement"
+			class="com.ApnaDarji.UserDetails.UpdateShirtMeasurementAction">
+			<result name="success" type="redirectAction">UserAccountDisplayAction</result>
+			<result name="error">LoginCheck.jsp</result>
+		</action>
+		<action name="AddShirtMeasurementAction" method="AddShirtMeasurement"
+			class="com.ApnaDarji.UserDetails.UpdateShirtMeasurementAction">
+			<result name="success" type="redirectAction">UserAccountDisplayAction</result>
+			<result name="error">LoginCheck.jsp</result>
+		</action>
+
+		<action name="UpdateTrouserMeasurementAction" method="UpdateTrouserMeasurement"
+			class="com.ApnaDarji.UserDetails.UpdateTrouserMeasurementAction">
+			<result name="success" type="redirectAction">UserAccountDisplayAction</result>
+			<result name="error">LoginCheck.jsp</result>
+		</action>
+		<action name="DeleteTrouserMeasurementAction" method="DeleteTrouserMeasurement"
+			class="com.ApnaDarji.UserDetails.UpdateTrouserMeasurementAction">
+			<result name="success" type="redirectAction">UserAccountDisplayAction</result>
+			<result name="error">LoginCheck.jsp</result>
+		</action>
+		<action name="AddTrouserMeasurementAction" method="AddTrouserMeasurement"
+			class="com.ApnaDarji.UserDetails.UpdateTrouserMeasurementAction">
+			<result name="success" type="redirectAction">UserAccountDisplayAction</result>
+			<result name="error">LoginCheck.jsp</result>
+		</action>
+
+		<action name="UpdateProfileAction" method="execute"
+			class="com.ApnaDarji.UserDetails.UpdateProfileAction">
+			<result name="success" type="redirectAction">UserAccountDisplayAction</result>
+			<result name="error">LoginCheck.jsp</result>
+		</action>
+
+		<action name="UserAccountDisplayAction" method="execute"
+			class="com.ApnaDarji.UserDetails.UserAccountDisplayAction">
+			<result name="success">MyAccount.jsp</result>
+			<result name="error">LoginCheck.jsp</result>
+		</action>
+
+		<action name="DisplayOrdersAction" class="com.ApnaDarji.Products.OrdersDisplayAction"
+			method="execute">
+			<result name="SUCCESS">MyOrders.jsp</result>
+			<result name="error">LoginCheck.jsp</result>
+		</action>
+		
+		<action name="chngPass" class="com.ApnaDarji.Authentication.ChangePasswordAction"
+			method="execute">
+		</action>
+	</package>
+
+</struts>
+

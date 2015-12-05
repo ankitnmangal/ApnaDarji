@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<!-- Generated Nov 15, 2015 3:08:07 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.ApnaDarji.Model.UserTrouserMeasurement" table="USERTROUSERMEASUREMENT">
+        <id name="trouserMeasurementId" type="long">
+            <column name="TROUSERMEASUREMENTID" />
+            <generator class="increment" />
+        </id>
+        <property name="userId" type="long" access="field">
+            <column name="USERID" />
+        </property>
+        
+        <property name="waist" type="double">
+            <column name="WAIST" />
+        </property>
+        <property name="hips" type="double">
+            <column name="HIPS" />
+        </property>
+        <property name="crotch" type="double">
+            <column name="CROTCH" />
+        </property>
+        <property name="thighWidth" type="double">
+            <column name="THIGHWIDTH" />
+        </property>
+        <property name="pantsLength" type="double">
+            <column name="PANTSLENGTH" />
+        </property>
+        <property name="inseam" type="double">
+            <column name="INSEAM" />
+        </property>
+        <property name="knee" type="double">
+            <column name="KNEE" />
+        </property>
+        <property name="halfHem" type="double">
+            <column name="HALFHEM" />
+        </property>
+        <property name="isPrimaryTrouserMeasurement" type="char">
+            <column name="ISPRIMARYTROUSERMEASUREMENT" />
+        </property>
+    </class>
+</hibernate-mapping>

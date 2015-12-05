@@ -1,0 +1,174 @@
+body,html{
+	padding: 0;
+	margin: 0;
+}
+
+p{
+	color: #728a9a;
+}
+
+.inline-div{
+	display: inline-block;
+	float: left;
+}
+
+#AD-outer-box{
+	margin: 80px 150px;
+	height: 350px;
+}
+
+#seperator{
+	width: 3%;
+	height: 80%;
+	padding: 5% 10px;
+	
+}
+
+#seperator p{
+	margin: 0;
+	padding: 0;
+	text-align: left;
+}
+
+.line{
+	border: 1px solid lightgrey;
+	width: 0px;
+	height: 80%;
+	margin: 0 0 0 10px;
+}
+
+.super-box{
+	width: 45%;
+}
+
+#head-text{
+	width: 100%;
+	height: 50px;
+	padding: .5% 2%;
+	text-align: center;
+}
+
+#log-sign{
+	height: 60px;
+	padding: 0;
+	margin: 5px  0 0 5%;
+	text-align: center;
+	width: 95%;
+}
+
+#log-sign input[type="submit"], #log-sign input[type="button"] {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 130px;
+	height: 40px;
+	border: 2px solid white;
+	background: #a3b3be;
+	color: white;
+	font-size: 13px;
+	margin: 10px 10px 0 10px;
+	cursor: pointer;
+	display: inline-block;.
+}
+
+#log-sign input[type="submit"]:hover,#log-sign input[type="button"]:hover
+	{
+	border: 2px solid #a3b3be;
+	background: white;
+	color: #a3b3be;
+	cursor: pointer;
+}
+
+#AD-fb-goog{
+	height: 170px;
+	padding: 0;
+	margin: 5px  0 0 5%;
+	text-align: center;
+	width: 95%;
+}
+
+#AD-fb-goog p{
+	margin: 0;
+	padding: 0;	
+}
+
+#AD-fb-goog input[type="submit"], #AD-fb-goog input[type="button"] {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 250px;
+	height: 40px;
+	border: 2px solid white;
+	background: #6799FF;
+	color: white;
+	font-size: 13px;
+	margin: 0 10px 10px 10px;
+	cursor: pointer;
+}
+
+#AD-fb-goog  #LogInFB{
+	background: #3b5998;
+}
+
+#AD-fb-goog  #LogInGoog{
+	background: #dd4b39;
+
+}
+
+#AD-fb-goog  #LogInFB:hover{
+	border: 2px solid #3b5998;
+	background: white;
+	color: #3b5998;
+	cursor: pointer;
+}
+
+#AD-fb-goog  #LogInGoog:hover{
+	border: 2px solid #dd4b39;
+	background: white;
+	color: #dd4b39;
+	cursor: pointer;
+}
+
+#AD-Guest-User{
+	padding: 0;
+	margin: 5px  0 0 5%;
+	text-align: center;
+	width: 95%;	
+}
+
+#AD-Guest-User input{
+	color: #607786;
+	width: 250px;
+	height: 40px;
+	border: 1px solid #a3b3be;
+	margin: 10px 0 0 0;
+	padding: 0 10px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	font-size: 13px;
+	
+}
+
+#AD-Guest-User input[type="submit"], #AD-Guest-User input[type="button"] {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 120px;
+	height: 40px;
+	border: 2px solid white;
+	background: #a3b3be;
+	color: white;
+	font-size: 13px;
+	margin: 12px 10px 10px 10px;
+	cursor: pointer;
+	padding: 0;
+}
+
+#AD-Guest-User input[type="submit"]:hover,#AD-Guest-User input[type="button"]:hover{
+	
+	border: 2px solid #a3b3be;
+	background: white;
+	color: #a3b3be;
+	cursor: pointer;
+}

@@ -1,0 +1,178 @@
+
+#prd-container {
+	padding: 0 1%;
+	margin: 0 6%;
+	width: 86%;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	background-color: white;
+	font-weight: 100;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 9999999999;
+	height: 400px;
+	display: none;
+}
+
+#prd-img-cont {
+	padding: 0;
+	margin: 0 2%;
+	background-color: white;
+	height: 100%;
+	width: 60%;
+	position: relative;
+	left: 0;
+	display: flex;
+	float: left;
+}
+
+#obj-img {
+	padding: 0;
+	margin: auto;
+	display: block;
+	position: relative;
+	overflow: hidden;
+	height: 60%;
+	width: 60%;
+}
+
+.floating-arw {
+	padding: 0;
+	margin: 0;
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+	top: 40%;
+	position: relative;
+	z-index: 999999;
+	display: block;
+}
+
+#prd-img-cont img:last-child {
+	right: 10%;
+}
+
+#prd-img-cont img:first-child {
+	left: 10%;
+}
+
+#prd-info-cont {
+	padding: 7% 0 0 0;
+	margin: 0 2%;
+	width: 31%;
+	height: 100%;
+	background-color: white;
+	position: relative;
+	display: inline-block;
+	float: left;
+	text-align: left;
+	font-size: 12px;
+}
+
+#prd-content1 h3{
+	padding: 0;
+	margin: 0;
+	line-height: 1.4;
+	font-size: 14px;
+	font-weight: 600;
+
+}
+
+#prd-content1 #qv-prodDesc{
+	font-size: 16px;
+}
+
+#prd-content1 #qv-fabQuality{
+	padding: 0;
+	margin: 0;
+	line-height: 1.4;
+	font-size: 14px;
+	font-weight: 600;
+	color: grey;
+}
+
+#prd-content1 #qv-material{
+	padding: 0;
+	margin: 0;
+	line-height: 1.4;
+	font-size: 14px;
+	font-weight: 600;
+	color: grey;
+}
+
+#prd-content1 #qv-price{
+	font-size: 14px;
+	color: grey;
+}
+
+
+#prd-content1 #qv-stock{
+	font-size: 14px;
+	color: #62ac87;
+}
+
+#prd-content3 input {
+	padding: 0;
+	margin: 10px 0 0 0;
+	height: 35px;
+	width: 180px;
+	background-color: #586d7c;
+	color: white;
+	font-size: 14px;
+	font-weight: 700;
+	border: 2px solid #586d7c;
+	cursor: pointer;
+/* 	text-align: left; */
+}
+
+#prd-content3 input:hover {
+	background-color: #323f47;
+	color: white;
+	border: 2px solid #323f47;
+}
+
+#prd-content2, #prd-content1 {
+	border-bottom: 1px solid lightgrey;
+}
+
+.prd-info-child-cont {
+	padding: 5% 0;
+	margin: 0;
+	width: 96%;
+	position: relative;
+	line-height: 1.7;
+}
+
+#clr-box-div {
+	padding: 0;
+	margin: 5px 0;
+}
+
+#clr-box-div .clr-box {
+	padding: 0;
+	margin: 0 7px 0 0;
+	border: 2px solid white;
+	background-color: lightgrey;
+	height: 20px;
+	width: 50px;
+	display: inline-block;
+	position: relative;
+	line-height: 1.7;
+	cursor: pointer;
+}
+
+#clr-box-div .clr-box:hover {
+	border: 2px solid black;
+}
+
+
+#fabrics-home-mask {
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 9000;
+	background-color: black;
+	display: none;
+	opacity: 0.7;
+}

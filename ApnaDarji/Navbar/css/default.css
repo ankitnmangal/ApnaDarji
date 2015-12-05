@@ -1,0 +1,62 @@
+﻿/*General Properties*/
+
+*{outline: none;}
+img{border: none;}
+
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+body{
+	cursor:default;
+	background-color:#F4F4F4;
+}
+
+a, a:link , a:visited , a:active {
+	text-decoration:none;
+}
+
+
+a:hover{
+	cursor:pointer;
+}
+
+
+.left{
+	float:left;
+}
+
+.right{
+	float:right;
+}
+
+.clear{
+	clear:both;
+}
+
+.center{
+	width:1000px;
+	margin:auto;
+}
+
+ul{
+	list-style:none;
+}
+
+
+/*------------------------Home--------------------------*/
+/*--------------------------------*/
+
+#nav li a span{
+	color:white;
+	background-color:black;
+	padding:5px;
+	border-radius:50%;
+	font-size:12px;
+	display:inline-block;
+}
+
+/*----------------------------------*/
+/*---------------------------End of Home----------------------------*/

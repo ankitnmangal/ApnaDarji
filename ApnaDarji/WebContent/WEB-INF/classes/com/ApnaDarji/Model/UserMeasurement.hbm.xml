@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<!-- Generated Nov 1, 2015 1:03:44 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.ApnaDarji.Model.UserMeasurement" table="USERMEASUREMENT">
+        <id name="m_ID" type="int">
+            <column name="M_ID" />
+            <generator class="increment" />
+        </id>
+        <property name="userID" type="int">
+            <column name="USERID" />
+        </property>
+        <property name="isPrimaryMeasurement" type="boolean" access="field">
+            <column name="ISPRIMARYMEASUREMENT" />
+        </property>
+        <property name="trouserLength" type="float">
+            <column name="TROUSERLENGTH" />
+        </property>
+        <property name="trouserWaistMeasurement" type="float">
+            <column name="TROUSERWAISTMEASUREMENT" />
+        </property>
+        <property name="trouserHipMeasurement" type="float">
+            <column name="TROUSERHIPMEASUREMENT" />
+        </property>
+        <property name="trouserSeatMeasurement" type="float">
+            <column name="TROUSERSEATMEASUREMENT" />
+        </property>
+        <property name="trouserInseamLength" type="float">
+            <column name="TROUSERINSEAMLENGTH" />
+        </property>
+        <property name="shirtLength" type="float">
+            <column name="SHIRTLENGTH" />
+        </property>
+        <property name="shirtChest" type="float">
+            <column name="SHIRTCHEST" />
+        </property>
+        <property name="shirtShoulders" type="float">
+            <column name="SHIRTSHOULDERS" />
+        </property>
+        <property name="shirtNeckMeasurement" type="float">
+            <column name="SHIRTNECKMEASUREMENT" />
+        </property>
+        <property name="shirtStomachMeasurement" type="float">
+            <column name="SHIRTSTOMACHMEASUREMENT" />
+        </property>
+        <property name="shirtWristMeasurement" type="float">
+            <column name="SHIRTWRISTMEASUREMENT" />
+        </property>
+        <property name="shirtTopArmMeasurement" type="float">
+            <column name="SHIRTTOPARMMEASUREMENT" />
+        </property>
+        <property name="shirtSleavesLength" type="float">
+            <column name="SHIRTSLEAVESLENGTH" />
+        </property>
+    </class>
+</hibernate-mapping>

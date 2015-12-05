@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 29, 2015 3:04:00 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.ApnaDarji.Model.Product" table="PRODUCT">
+        <id name="pID" type="long" access="field">
+            <column name="PID" />
+            <generator class="increment" />
+        </id>
+        <property name="prodId" type="java.lang.String">
+            <column name="PRODID" />
+        </property>
+        <property name="prdType" type="java.lang.String">
+            <column name="PRDTYPE" />
+        </property>
+        <property name="inStock" type="char">
+            <column name="INSTOCK" />
+        </property>
+        <property name="prodDesc" type="java.lang.String">
+            <column name="PRODDESC" />
+        </property>
+        <property name="prodPrice" type="int">
+            <column name="PRODPRICE" />
+        </property>
+        <property name="prdColor" type="java.lang.String">
+            <column name="PRDCOLOR" />
+        </property>
+        <property name="prdImg" type="java.lang.String">
+            <column name="PRDIMG" />
+        </property>
+        <property name="company_Quality_Type" type="java.lang.String">
+            <column name="COMPANY_QUALITY_TYPE" />
+        </property>
+        <property name="grpId" type="java.lang.String">
+            <column name="GRPID" />
+        </property>
+        <property name="fabric_Quality_Type" type="java.lang.String">
+            <column name="FABRIC_QUALITY_TYPE" />
+        </property>
+        <property name="materialType" type="java.lang.String">
+            <column name="MATERIALTYPE" />
+        </property>
+        <property name="brand" type="java.lang.String">
+            <column name="BRAND" />
+        </property>
+    </class>
+</hibernate-mapping>

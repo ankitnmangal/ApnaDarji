@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<!-- Generated Nov 10, 2015 1:20:39 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+ <class name="com.ApnaDarji.Model.User" table="USER">
+  <id name="userId" type="long">
+   <column name="USERID"/>
+   <generator class="increment"/>
+  </id>
+  <property generated="never" lazy="false" name="firstName" type="java.lang.String">
+   <column name="FIRSTNAME"/>
+  </property>
+  <property generated="never" lazy="false" name="lastName" type="java.lang.String">
+   <column name="LASTNAME"/>
+  </property>
+  <property generated="never" lazy="false" name="emailId"
+   type="java.lang.String" unique="true">
+   <column name="EMAILID"/>
+  </property>
+  <property generated="never" lazy="false" name="password" type="java.lang.String">
+   <column name="PASSWORD"/>
+  </property>
+  <property generated="never" lazy="false" name="PrimaryContactNO" type="java.lang.String">
+   <column name="PRIMARYCONTACTNO"/>
+  </property>
+  <property generated="never" lazy="false" name="DOReg" type="java.lang.String">
+   <column name="DOREG"/>
+  </property>
+<!--   <list cascade="all" fetch="join" lazy="false" name="addrList"> -->
+<!--    <key column="USERID"/> -->
+<!--    <index column="type"/> -->
+<!--    <one-to-many class="com.ApnaDarji.Model.Address"/> -->
+<!--   </list> -->
+<!--   <list cascade="all" name="shirtMeasureList"> -->
+<!--    <key column="USERID"/> -->
+<!--    <index column="type"/> -->
+<!--    <one-to-many class="com.ApnaDarji.Model.UserShirtMeasurement"/> -->
+<!--   </list> -->
+<!--   <list cascade="all" name="trouserMeasureList"> -->
+<!--    <key column="USERID"/> -->
+<!--    <index column="type"/> -->
+<!--    <one-to-many class="com.ApnaDarji.Model.UserTrouserMeasurement"/> -->
+<!--   </list> -->
+ </class>
+</hibernate-mapping>

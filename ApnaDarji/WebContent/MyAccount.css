@@ -1,0 +1,499 @@
+html, body {
+	padding: 0;
+	margin: 0;
+	min-width: 400px;
+}
+
+.myAccount {
+	display: none;
+}
+
+.myAccount h2 {
+	font-size: 20px;
+}
+
+.myAccount input {
+	font-size: 13px;
+}
+
+#main-outer-box {
+	padding: 0;
+	margin: 15px 120px 0 120px;
+	top: 80px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	background-color: white;
+	font-weight: 100;
+}
+
+#tab-box {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	/* 	height: 25px; */
+	color: #959595;
+	border-bottom: 1px solid lightgrey;
+	text-align: center;
+}
+
+.tab-selected {
+	color: black;
+	border-bottom: 1px solid black;
+}
+
+#tab-box li {
+	padding: 0;
+	margin: 0 5%;
+	height: 25px;
+	list-style-type: none;
+	display: inline-block;
+	cursor: pointer;
+}
+
+#tab-box li:hover {
+	color: black;
+	border-bottom: 1px solid black;
+}
+
+#tab-box abbr {
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+	line-height: 2.6;
+}
+
+#edit-info-title-box, #per-info-title-box, #edit-saved-add-title-box {
+	padding: 0;
+	margin: 20px 10% 0px 10%;
+	height: 30px;
+	text-align: center;
+}
+
+#edit-saved-shirt-measurement-title-box, #edit-saved-trouser-measurement-title-box {
+	padding: 0;
+	margin: 20px 10% 10px 10%;
+/* 	height: 40px; */
+	text-align: center;
+}
+
+#saved-add-title-box, #saved-trouser-measurement-title-box, #saved-shirt-measurement-title-box{
+	padding: 0;
+	margin: 20px 10% 10px 10%;
+	height: 40px;
+}
+
+#edit-saved-shirt-measurement-title-box select, #edit-saved-trouser-measurement-title-box select{
+	background-color: white;
+	color: black;
+	width: 120px;
+	height: 20px;
+	border: 1px solid grey;
+	padding: 0 0 0 10px;
+}
+
+#edit-info-title-box h2, #per-info-title-box h2, ,#edit-saved-add-title-box h2,
+	#edit-saved-shirt-measurement-title-box h2, #edit-saved-trouser-measurement-title-box h2{
+	display: inline;
+	font-weight: 300;
+	margin: 0;
+	padding: 0;
+}
+
+#saved-add-title-box h2, #saved-shirt-measurement-title-box h2, #saved-trouser-measurement-title-box h2 {
+	float: left;
+	display: inline;
+	font-weight: 300;
+	margin: 0;
+	padding: 0;
+}
+
+#per-info-box {
+	margin: 10px 10%;
+	padding: 0;
+	border: 1px solid grey;
+}
+
+#per-info-box ul {
+	margin: 0 15px 30px 15px;
+	padding: 5px;
+	widht: 100%;
+	list-style-type: none;
+}
+
+#per-info-box ul li {
+	margin: 20px 0 0 0;
+	padding: 0;
+	/* 	height: 45px; */
+}
+
+#per-info-box ul li #h2-width {
+	width: 130px;
+	display: inline-block;
+}
+
+#per-info-box ul li>h2 {
+	font-size: 12px;
+	color: grey;
+}
+
+#per-info-box ul h2 {
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	display: inline-block;
+	font-size: 11px;
+	font-weight: 200;
+	color: grey;
+}
+
+#per-info-box ul li #edit-info-but {
+	padding: 0 8px;
+	margin: 7px 0 0 0;
+	background-color: white;
+	color: black;
+	height: 30px;
+	border: 2px solid black;
+	cursor: pointer;
+	display: inline;
+	font-size: 13px;
+}
+
+#per-info-box ul li #edit-info-but:hover {
+	background-color: black;
+	color: white;
+}
+
+#per-info-box ul li .text-boxes {
+	padding: 0 8px;
+	margin: 0 0 0 0;
+	background-color: white;
+	color: grey;
+	height: 35px;
+	width: 250px;
+	border: 1px solid grey;
+	display: inline;
+	font-size: 13px;
+}
+
+#per-info-box ul li a {
+	color: grey;
+}
+
+#edit-info-save-but, #edit-info-cancel-but {
+	padding: 0 6px;
+	margin: 7px 0 0 10px;
+	background-color: white;
+	color: black;
+	height: 26px;
+	border: 2px solid black;
+	cursor: pointer;
+	display: inline;
+	font-size: 13px;
+}
+
+#edit-info-save-but:hover, #edit-info-cancel-but:hover {
+	background-color: black;
+	color: white;
+}
+
+#addnewadd-but, #addnewshirt-but, #addnewpant-but {
+	margin: 0px 0 0 0;
+	padding: 8px;
+	background-color: white;
+	color: black;
+	border: 1px solid black;
+	cursor: pointer;
+	display: inline;
+	float: right;
+}
+
+#addnewadd-but:hover, #addnewshirt-but:hover, #addnewpant-but:hover {
+	background-color: black;
+	color: white;
+}
+
+#saved-add-box, #saved-shirt-box, #saved-pant-box {
+	margin: 10px 10%;
+	padding: 0;
+	border: 1px solid grey;
+}
+
+#saved-add-box ul, #saved-shirt-box ul, #saved-pant-box ul {
+	padding: 5px;
+	widht: 100%;
+	list-style-type: none;
+}
+
+#saved-add-box ul li, #saved-shirt-box ul li, #saved-pant-box ul li {
+	margin: 10px 30px;
+	padding: 0;
+}
+
+#saved-add-box ul li address {
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+	line-height: 1.1;
+	margin-bottom: 1px;
+}
+
+#edit-add-but, #del-add-but, #edit-shirt-measure-but,
+	#edit-pant-measure-but, #del-shirt-measure-but, #del-pant-measure-but {
+	margin: 0 15px 0 0;
+	padding: 0 6px;
+	background-color: white;
+	color: black;
+	border: 1px solid black;
+	cursor: pointer;
+	display: inline;
+	height: 26px;
+}
+
+#edit-add-but:hover, #del-add-but:hover, #edit-shirt-measure-but:hover,
+	#edit-pant-measure-but:hover, #del-shirt-measure-but:hover,
+	#del-pant-measure-but:hover {
+	background-color: black;
+	color: white;
+}
+
+#myAccount-saved-add-edit-box {
+	margin: 10px 10%;
+	padding: 0;
+	/*                                 border: 1px solid grey; */
+}
+
+#saved-add-edit-box {
+	margin: 10px 10% 0;
+	padding: 0;
+	border: 1px solid grey;
+}
+
+#myAccount-saved-add-edit-box ul {
+	margin: 10px 15px;
+	padding: 5px;
+	widht: 100%;
+	list-style-type: none;
+}
+
+#myAccount-saved-add-edit-box ul li {
+	margin: 0 0 5px 0;
+	padding: 0;
+}
+
+#myAccount-saved-add-edit-box ul li .textbox {
+	padding: 0 15px;
+	margin: 0 15px 0 0;
+	background-color: transparent;
+	color: black;
+	border: 1px solid black;
+	height: 30px;
+}
+
+#myAccount-saved-add-edit-box ul li textarea {
+	padding: 10px;
+	margin: 0;
+	background-color: transparent;
+	color: black;
+	height: 90%;
+	border: 1px solid black;
+	width: 500px;
+	height: 75px;
+	font-size: 14px;
+}
+
+#myAccount-saved-add-edit-box ul li span {
+	font-size: 12px;
+	margin: 0 2px;
+	padding: 0;
+	font-weight: 500;
+}
+
+.add-save-but, .add-cancel-but {
+	padding: 0 15px;
+	margin: 7px 0 0 0;
+	background-color: black;
+	color: white;
+	height: 35px;
+	border: 2px solid white;
+	cursor: pointer;
+	display: inline;
+}
+
+.add-save-but:hover, .add-cancel-but:hover {
+	background-color: white;
+	color: black;
+	border: 2px solid black;
+}
+
+#saved-shirt-box p {
+	padding: 2px;
+	margin: 5px 20px;
+	height: 15px;
+	width: 150px;
+	display: inline-block;
+	float: left;
+	color: grey;
+	font-size: 12px;
+}
+
+#saved-shirt-box div {
+	margin: 0;
+	padding: 10px;
+	width: 100%;
+	height: auto;
+	position: relative;
+	display: inline-block;
+}
+
+#saved-pant-box p {
+	padding: 2px;
+	margin: 5px 20px;
+	height: 15px;
+	width: 150px;
+	display: inline-block;
+	float: left;
+	color: grey;
+	font-size: 12px;
+}
+
+#saved-pant-box div {
+	margin: 0;
+	padding: 10px;
+	width: 100%;
+	height: auto;
+	position: relative;
+	display: inline-block;
+}
+
+#edit-shirt-measurement-div p, #edit-pant-measurement-div p {
+	padding: 2px;
+	margin: 5px 20px;
+	height: 25px;
+	width: 220px;
+	display: inline-block;
+	float: left;
+	color: grey;
+	font-size: 15px;
+}
+
+#edit-shirt-measurement-div input {
+	padding: 0;
+	margin: 0 5px;
+	width: 60px;
+	float: right;
+	border: 1px solid grey;
+}
+
+#edit-pant-measurement-div input {
+	padding: 0;
+	margin: 0 5px;
+	width: 60px;
+	float: right;
+	border: 1px solid grey;
+}
+
+.editboxandbuttons {
+	display: inline-block;
+	width: 100%;
+	position: relative;
+	margin: 0 0 0 50px;
+	padding: 10px;
+}
+
+.editboxandbuttons-inlinediv {
+	padding: 0;
+	margin: 10px;
+	width: 340px;
+	height: 100%;
+	display: inline-block;
+	/* 	border: 1px solid grey; */
+	float: left;
+}
+
+.editboxandbuttons-inlinediv img {
+	padding: 0;
+	margin: 0;
+	height: 280px;
+	width: 250px;
+}
+
+#address-title-div {
+	padding: 12px 0 0 0;
+	margin: 0;
+	background-color: #eaeaea;
+	height: 40px;
+	width: 100%;
+	text-align: center;
+}
+
+#address-title-div h4 {
+	padding: 0;
+	margin: 0;
+	font-size: 15px;
+}
+
+#shirt-measure-title-div {
+	padding: 12px 0 0 0;
+	margin: 0;
+	background-color: #eaeaea;
+	height: 40px;
+	width: 100%;
+	text-align: center;
+}
+
+#shirt-measure-title-div h4 {
+	padding: 0;
+	margin: 0;
+	font-size: 15px;
+}
+
+#trouser-measure-title-div {
+	padding: 12px 0 0 0;
+	margin: 0;
+	background-color: #eaeaea;
+	height: 40px;
+	width: 100%;
+	text-align: center;
+}
+
+#trouser-measure-title-div h4 {
+	padding: 0;
+	margin: 0;
+	font-size: 15px;
+}
+
+@media ( min-width : 40px) and (max-width: 1200px) {
+	#edit-info-title-box, #per-info-title-box, #edit-saved-add-title-box {
+		padding: 0;
+		margin: 20px 10% 0px 10%;
+		height: 60px;
+		text-align: center;
+	}
+	#edit-saved-measurement-title-box {
+		padding: 0;
+		margin: 20px 10% 10px 10%;
+		height: 80px;
+		text-align: center;
+	}
+	#saved-add-title-box, #saved-measurement-title-box {
+		padding: 0;
+		margin: 20px 10% 10px 10%;
+		height: 60px;
+	}
+	#main-outer-box {
+		padding: 0;
+		margin: 15px 120px 0 60px;
+		top: 80px;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size: 11px;
+		background-color: white;
+		font-weight: 100;
+	}
+	.myAccount h2 {
+		font-size: 14px;
+	}
+	.myAccount input[type="button"], .myAccount input[type="submit"] {
+		margin: 5px 0;
+	}
+}
+}

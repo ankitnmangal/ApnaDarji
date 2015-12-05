@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<!-- Generated Nov 10, 2015 1:16:05 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.ApnaDarji.Model.Address" table="ADDRESS">
+        <id name="addrId" type="long">
+            <column name="ADDRID" />
+            <generator class="increment" />
+        </id>
+        <property name="userId" type="long">
+            <column name="USERID" />
+        </property>
+        <property name="userName" type="java.lang.String">
+            <column name="USERNAME" />
+        </property>
+        <property name="houseNum" type="java.lang.String">
+            <column name="HOUSENUM" />
+        </property>
+        <property name="addressLine1" type="java.lang.String">
+            <column name="ADDRESSLINE1" />
+        </property>
+        <property name="addressLine2" type="java.lang.String">
+            <column name="ADDRESSLINE2" />
+        </property>
+        <property name="city" type="java.lang.String">
+            <column name="CITY" />
+        </property>
+        <property name="state" type="java.lang.String">
+            <column name="STATE" />
+        </property>
+        <property name="country" type="java.lang.String">
+            <column name="COUNTRY" />
+        </property>
+        <property name="postalCode" type="java.lang.String">
+            <column name="POSTALCODE" />
+        </property>
+        <property name="Landmark" type="java.lang.String">
+            <column name="LANDMARK" />
+        </property>
+        <property name="addressType" type="java.lang.String">
+            <column name="ADDRESSTYPE" />
+        </property>
+        <property name="isPrimaryAddress" type="char" access="field">
+            <column name="ISPRIMARYADDRESS" />
+        </property>
+        <property name="alternateContactNumber" type="java.lang.String">
+            <column name="ALTERNATECONTACTNUMBER" />
+        </property>
+    </class>
+</hibernate-mapping>

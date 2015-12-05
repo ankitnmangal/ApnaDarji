@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<!-- Generated Nov 9, 2015 3:43:31 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+	<class name="com.ApnaDarji.Model.UserContactDetails" table="USERCONTACTDETAILS">
+
+		<id name="Con_DtlId" type="int">
+			<column name="CON_DTLID" />
+			<generator class="increment" />
+		</id>
+
+		<property name="addId" type="int">
+			<column name="ADDID" />
+		</property>
+		<property name="userId" type="int">
+			<column name="USERID" />
+		</property>
+		<property name="emailId" type="java.lang.String">
+			<column name="EMAILID" />
+		</property>
+		<property name="isVerifiedContactNumber" type="boolean"
+			access="field">
+			<column name="ISVERIFIEDCONTACTNUMBER" />
+		</property>
+		<property name="primaryContactNumber" type="java.lang.String">
+			<column name="PRIMARYCONTACTNUMBER" />
+		</property>
+		<property name="alternateContactNumber" type="java.lang.String">
+			<column name="ALTERNATECONTACTNUMBER" />
+		</property>
+	</class>
+</hibernate-mapping>

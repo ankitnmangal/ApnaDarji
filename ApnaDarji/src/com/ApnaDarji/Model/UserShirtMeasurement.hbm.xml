@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<!-- Generated Nov 15, 2015 3:08:07 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.ApnaDarji.Model.UserShirtMeasurement" table="USERSHIRTMEASUREMENT">
+         <id name="shirtMeasurementId" type="long">
+            <column name="SHIRTMEASUREMENTID" />
+            <generator class="increment" />
+        </id>
+        
+        <property name="userId" type="long" access="field">
+            <column name="USERID" />
+            
+        </property>
+       
+        <property name="collar" type="double">
+            <column name="COLLAR" />
+        </property>
+        <property name="halfChest" type="double">
+            <column name="HALFCHEST" />
+        </property>
+        <property name="halfWaist" type="double">
+            <column name="HALFWAIST" />
+        </property>
+        <property name="halfHips" type="double">
+            <column name="HALFHIPS" />
+        </property>
+        <property name="sleeveLength" type="double">
+            <column name="SLEEVELENGTH" />
+        </property>
+        <property name="elbow" type="double">
+            <column name="ELBOW" />
+        </property>
+        <property name="foreArm" type="double">
+            <column name="FOREARM" />
+        </property>
+        <property name="halfBicep" type="double">
+            <column name="HALFBICEP" />
+        </property>
+        <property name="cuff" type="double">
+            <column name="CUFF" />
+        </property>
+        <property name="yoke" type="double">
+            <column name="YOKE" />
+        </property>
+        <property name="shirtLength" type="double">
+            <column name="SHIRTLENGTH" />
+        </property>
+        <property name="halfArmhole" type="double">
+            <column name="HALFARMHOLE" />
+        </property>
+        <property name="shortSleeveLength" type="double">
+            <column name="SHORTSLEEVELENGTH" />
+        </property>
+        <property name="shortSleeveOpening" type="double">
+            <column name="SHORTSLEEVEOPENING" />
+        </property>
+        <property name="isPrimaryShirtMeasurement" type="char">
+            <column name="ISPRIMARYSHIRTMEASUREMENT" />
+        </property>
+    </class>
+</hibernate-mapping>
